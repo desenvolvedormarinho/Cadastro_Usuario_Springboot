@@ -23,8 +23,7 @@ public class Usuario implements Serializable {
 	
 	private int idade;
 	
-	
-	
+
 	public Long getId() {
 		return id;
 	}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="utf-8">
 <title>Cadastro-Usuario-Springboot</title>
 
 <!-- Bootstrap CSS -->
@@ -12,7 +12,7 @@ html{
 
 	margin-left: 5%;
 	margin-right: 5%;
-	margin-top: 8%
+	margin-top: 3%
 	
 	
 
@@ -54,7 +54,7 @@ html{
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Pesquisa Usuário</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Pesquisa UsuÃ¡rio</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -112,7 +112,7 @@ html{
 
 	function deleteUser(id){
 		
-		if(confirm('Excluir usuário?')){
+		if(confirm('Excluir usuÃ¡rio?')){
 		
 		$.ajax({
 			method: "DELETE",
@@ -139,8 +139,11 @@ html{
 	
 	function pesquisaUser(){
 		var nome = $('#nameBusca').val();
+		 
 		
 		if(nome != null && nome.trim() != ''){
+			
+			
 			
 			$.ajax({
 				method: "GET",
